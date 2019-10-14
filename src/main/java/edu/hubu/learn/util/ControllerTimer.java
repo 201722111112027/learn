@@ -1,5 +1,6 @@
 package edu.hubu.learn.util;
 
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Around;
@@ -11,7 +12,7 @@ import lombok.extern.java.Log;
 
 @Aspect
 @Component
-@Log
+@Slf4j
 public class ControllerTimer {
 
     @Pointcut("execution(public * edu.hubu.learn.web.*.*(..))")
