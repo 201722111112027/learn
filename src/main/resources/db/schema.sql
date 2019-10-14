@@ -68,4 +68,12 @@ ALTER TABLE `whmTest` ADD UNIQUE (`username`);
 ALTER TABLE `whmTest` ADD UNIQUE (`email`);
 ALTER TABLE `whmTest` ADD UNIQUE (`phone`);
 
-
+DROP TABLE IF EXISTS `Leetest`;
+CREATE TABLE `Leetest` (
+`id` bigint(20) NOT NULL AUTO_INCREMENT,
+`username` varchar(50) DEFAULT NULL comment '用户名',
+`password` varchar(255) DEFAULT NULL,
+`email` varchar(50) DEFAULT NULL,
+`phone` varchar(50) DEFAULT NULL,
+PRIMARY KEY (`id`)
+);
