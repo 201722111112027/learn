@@ -28,7 +28,6 @@ public class WangService {
 
     public List<Wang> searchWang(String keyword) {
         Wang wang = new Wang();
-    
         wang.setUsername(keyword);
         ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("username", match->match.contains());
         Example<Wang> example = Example.of(wang, matcher);
