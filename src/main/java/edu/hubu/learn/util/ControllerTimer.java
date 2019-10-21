@@ -29,6 +29,5 @@ public class ControllerTimer {
 
     private void logCostTime(ProceedingJoinPoint joinPoint, long time) {
         Signature signature = joinPoint.getSignature();
-        log.info("method: " + signature.toString() + " cost:" + time + "ms");
     }
 }
