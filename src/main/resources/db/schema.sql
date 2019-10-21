@@ -33,3 +33,15 @@ ALTER TABLE `whmTest` ADD UNIQUE (`email`);
 ALTER TABLE `whmTest` ADD UNIQUE (`phone`);
 
 
+DROP TABLE IF EXISTS `cjy`;
+CREATE TABLE `cjy` (
+`id` bigint(20) NOT NULL AUTO_INCREMENT,
+`name` varchar(50) DEFAULT NULL comment '姓名',
+`email` varchar(50) DEFAULT NULL,
+`phone` varchar(50) DEFAULT NULL,
+PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `cjy` ADD UNIQUE (`name`);
+ALTER TABLE `cjy` ADD UNIQUE (`email`);
+ALTER TABLE `cjy` ADD UNIQUE (`phone`);
